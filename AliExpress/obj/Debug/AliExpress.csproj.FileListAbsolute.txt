@@ -1,0 +1,7 @@
+C:\BOT\Cursos\Patrones\AliExpress\AliExpress\bin\Debug\AliExpress.exe.config
+C:\BOT\Cursos\Patrones\AliExpress\AliExpress\bin\Debug\AliExpress.exe
+C:\BOT\Cursos\Patrones\AliExpress\AliExpress\bin\Debug\AliExpress.pdb
+C:\BOT\Cursos\Patrones\AliExpress\AliExpress\obj\Debug\AliExpress.csprojAssemblyReference.cache
+C:\BOT\Cursos\Patrones\AliExpress\AliExpress\obj\Debug\AliExpress.csproj.CoreCompileInputs.cache
+C:\BOT\Cursos\Patrones\AliExpress\AliExpress\obj\Debug\AliExpress.exe
+C:\BOT\Cursos\Patrones\AliExpress\AliExpress\obj\Debug\AliExpress.pdb

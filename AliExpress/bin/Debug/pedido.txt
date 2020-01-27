@@ -1,0 +1,4 @@
+Ticul,Motul,80,Borigonga,Tren,23-01-2020 12:00:00
+Ticul,Motul,80,DHL,Helicoptero,23-01-2020 12:00:00
+Ticul,Motul,100,Fedex,Barco,23-01-2019 12:00:00
+Ticul,Motul,800,Estafeta,Tren,29-01-2020 12:00:00
