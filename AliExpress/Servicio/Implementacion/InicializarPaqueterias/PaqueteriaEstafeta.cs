@@ -4,7 +4,7 @@ using AliExpress.Servicio.Interface;
 
 namespace AliExpress.Servicio.Implementacion.InicializarPaqueterias
 {
-    class PaqueteriaEstafeta : IInicializarPaqueterias
+    public class PaqueteriaEstafeta : IInicializarPaqueterias
     {
         ITransportesPorPaqueteria ITransportesPorPaqueteria { get; set; }
 

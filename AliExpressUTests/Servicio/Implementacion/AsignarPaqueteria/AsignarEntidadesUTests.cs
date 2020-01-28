@@ -8,7 +8,7 @@ namespace AliExpress.Servicio.Implementacion.AsignarPaqueteria.Tests
     public class AsignarEntidadesTests
     {
         [TestMethod()]
-        public void AsignarEntidadPaqueteria_NoEnviarPaqueteriaListaPaqueterias_NoAsignaPaqueteria()
+        public void AsignarEntidadPaqueteria_NoEnviarPedidoListaPaqueterias_NoAsignaPaqueteria()
         {
             Pedido entPedido = new Pedido();
             List<Paqueteria> lstPaqueteria = new List<Paqueteria>();
@@ -18,9 +18,36 @@ namespace AliExpress.Servicio.Implementacion.AsignarPaqueteria.Tests
         }
 
         [TestMethod()]
-        public void AsignarEntidadPaqueteria_NoEnviarPaqueteriaListaPaqueterias_NoAsignaTransporte()
+        public void AsignarEntidadPaqueteria_NoEnviarPedidoListaPaqueterias_NoAsignaTransporte()
         {
             Pedido entPedido = new Pedido();
+            List<Paqueteria> lstPaqueteria = new List<Paqueteria>();
+            AsignarEntidades AsignarEntidades = new AsignarEntidades();
+            AsignarEntidades.AsignarEntidadPaqueteria(entPedido, lstPaqueteria);
+            Assert.IsTrue(entPedido.entTransporte == null);
+        }
+
+        [TestMethod()]
+        public void AsignarEntidadPaqueteria_EnviarPedidoNoEnviarListaPaqueterias_NoAsignaPaqueteria()
+        {
+            Pedido entPedido = new Pedido()
+            {
+                cPaqueteria = "DHL"
+            };
+            List<Paqueteria> lstPaqueteria = new List<Paqueteria>();
+            AsignarEntidades AsignarEntidades = new AsignarEntidades();
+            AsignarEntidades.AsignarEntidadPaqueteria(entPedido, lstPaqueteria);
+            Assert.IsTrue(entPedido.entPaqueteria == null);
+        }
+
+        [TestMethod()]
+        public void AsignarEntidadPaqueteria_EnviarPedidoNoEnviarListaPaqueterias_NoAsignaTransporte()
+        {
+            Pedido entPedido = new Pedido()
+            {
+                cPaqueteria = "DHL",
+                cMedioTransporte = "AVION"
+            };
             List<Paqueteria> lstPaqueteria = new List<Paqueteria>();
             AsignarEntidades AsignarEntidades = new AsignarEntidades();
             AsignarEntidades.AsignarEntidadPaqueteria(entPedido, lstPaqueteria);
@@ -32,8 +59,8 @@ namespace AliExpress.Servicio.Implementacion.AsignarPaqueteria.Tests
         {
             Pedido entPedido = new Pedido()
             {
-                cPaqueteria="DHL"
-            };            
+                cPaqueteria = "DHL"
+            };
             List<Paqueteria> lstPaqueteria = new List<Paqueteria>();
             lstPaqueteria.Add(new Paqueteria()
             {

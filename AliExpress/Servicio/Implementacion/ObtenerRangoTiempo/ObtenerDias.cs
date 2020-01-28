@@ -2,7 +2,7 @@
 
 namespace AliExpress.Servicio.Implementacion.ObtenerRangoTiempo
 {
-    class ObtenerDias : ManejadorRangoTiempo
+    public class ObtenerDias : ManejadorRangoTiempo
     {
         public override string ObtenerTextoRangoTiempo(TimeSpan _tiempo)
         {

@@ -58,6 +58,23 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Servicio\Implementacion\AsignarPaqueteria\AsignarEntidadesUTests.cs" />
+    <Compile Include="Servicio\Implementacion\GenerarMensaje\GenerarMensajePedidoUTests.cs" />
+    <Compile Include="Servicio\Implementacion\InicializarPaqueterias\PaqueteriaDHLUTests.cs" />
+    <Compile Include="Servicio\Implementacion\InicializarPaqueterias\PaqueteriaEstafetaUTests.cs" />
+    <Compile Include="Servicio\Implementacion\InicializarPaqueterias\PaqueteriaFedexUTests.cs" />
+    <Compile Include="Servicio\Implementacion\InicializarTransportes\TransporteAvionUTests.cs" />
+    <Compile Include="Servicio\Implementacion\InicializarTransportes\TransporteBarcoUTests.cs" />
+    <Compile Include="Servicio\Implementacion\InicializarTransportes\TransporteTrenUTests.cs" />
+    <Compile Include="Servicio\Implementacion\LectorArchivo\LectorArchivoTextoUTests.cs" />
+    <Compile Include="Servicio\Implementacion\ObtenerMensaje\ObtenerMensajeEnvioEntregadoUTests.cs" />
+    <Compile Include="Servicio\Implementacion\ObtenerMensaje\ObtenerMensajeEnvioPendienteUTests.cs" />
+    <Compile Include="Servicio\Implementacion\ObtenerRangoTiempo\ObtenerDiasUTests.cs" />
+    <Compile Include="Servicio\Implementacion\ObtenerRangoTiempo\ObtenerHorasUTests.cs" />
+    <Compile Include="Servicio\Implementacion\ObtenerRangoTiempo\ObtenerMesesUTests.cs" />
+    <Compile Include="Servicio\Implementacion\ObtenerRangoTiempo\ObtenerMinutosUTests.cs" />
+    <Compile Include="Servicio\Implementacion\TransportesPorPaqueteria\CrearTransportesUTests.cs" />
+    <Compile Include="Servicio\Implementacion\Validacion\ValidacionesUTests.cs" />
+    <Compile Include="Servicio\Implementacion\VerificarOpcionEconomica\EvaluarOpcionEconomincaUTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

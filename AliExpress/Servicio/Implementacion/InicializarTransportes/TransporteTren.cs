@@ -3,7 +3,7 @@ using AliExpress.Servicio.Interface;
 
 namespace AliExpress.Servicio.Implementacion.InicializarTransportes
 {
-    class TransporteTren : IInicializarTransportes
+    public class TransporteTren : IInicializarTransportes
     {
         public Transporte CrearTransporte()
         {

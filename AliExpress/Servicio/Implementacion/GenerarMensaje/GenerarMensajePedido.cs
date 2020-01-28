@@ -54,8 +54,9 @@ namespace AliExpress.Servicio.Implementacion.GenerarMensaje
 
         public double ObtenerTiempoTraslado(int _iDistancia, int _iVelocidad)
         {
-            double dTiempoTraslado = new double();
-            dTiempoTraslado = _iDistancia / _iVelocidad;
+            double dTiempoTraslado = 0;
+            if(_iVelocidad>0)
+                dTiempoTraslado = _iDistancia / _iVelocidad;
             return dTiempoTraslado;
         }
 
@@ -69,7 +70,8 @@ namespace AliExpress.Servicio.Implementacion.GenerarMensaje
         public decimal ObtenerCostoEnvio(Pedido _Pedido)
         {
             decimal dCostoEnvio = 0.0M;
-            dCostoEnvio = (_Pedido.entTransporte.iCostoKilometro * _Pedido.iDistancia) + (1 + ((decimal)_Pedido.entPaqueteria.iMargenUtilidad / 100));
+            if(_Pedido!=null && _Pedido.entTransporte!=null && _Pedido.entPaqueteria!=null)
+                dCostoEnvio = (_Pedido.entTransporte.iCostoKilometro * _Pedido.iDistancia) + (1 + ((decimal)_Pedido.entPaqueteria.iMargenUtilidad / 100));
             return dCostoEnvio;
         }
     }
